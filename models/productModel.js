@@ -29,3 +29,39 @@ const productSchema = mongoose.Schema(
 const Product = mongoose.model('Product', productSchema);
 
 module.exports = Product;
+
+
+
+
+
+/*
+this is for dishco food data structure
+const mongoose = require('mongoose');
+
+const foodSchema = new mongoose.Schema({
+  image: String,
+  name: String,
+  foodCode: String,
+  stock: Number,
+  foodDescription: String,
+  categories: String,
+  subCategories: String,
+  childCategories: String,
+  addonsItem: [
+    {
+      addonName: String,
+      addonPrice: Number,
+    },
+  ],
+  sizePriceItem: [
+    {
+      size: String,
+      price: Number,
+    },
+  ],
+});
+
+const Food = mongoose.model('Food', foodSchema);
+
+module.exports = Food;
+*/
